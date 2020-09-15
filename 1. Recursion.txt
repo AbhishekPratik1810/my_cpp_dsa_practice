@@ -1,0 +1,41 @@
+Types
+i) Tail
+ii) Head
+iii) Tree
+iv) Indirect
+v) Nested
+
+1. TAIL RECURSION
+The recursive call is the last statement in the recursion. After that call, it isn't performing anything
+All operations are performed during calling time, No operation is performed during returning time
+Always use loops instead of Tail Recursion, as Loops have lesser Space Complexity
+Easy to convert Tail Recursion to a Loop
+
+2. HEAD RECURSION
+The recursive call is the first statement in the recursion. After that call, all the next operations are performed
+No operation is performed during calling time, All operations are performed during returning time
+Not easy to convert Head Recursion to a Loop, it is possible but not by direct observation
+
+3. TREE RECURSION
+Before we discussed linear recursion i.e only one recursive call inside the function
+Tree recursion has multiple recursive calls inside the function, i.e recursive function is calling itself more than once
+BARI sahab ki jai ho :)
+
+4. INDIRECT RECURSION
+Function call to itself doesn't happen directly. it happens when a circular loop takes place.
+For ex A-->B-->A , A-->B-->C-->A
+
+5. NESTED RECURSION
+Recursive call paramater is itself a recursive call
+
+6. Whenever you want to return more than one type from a function, use static variables
+"When you want to use multiple values in recursion, then you can use static variables"
+
+7. If function is calling itself two times, with reduced power of n-1, then time complexity is O(2^n)
+Look at L27 from 9:00 onwards
+
+8. EXCESSIVE RECURSION
+If a function is calling itself mutliple time for the same value
+
+9. Memoization
+Storing the results of a function call so that they can be utilised again when we need the same call is called memoization. It is used to remove excessive calls
